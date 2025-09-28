@@ -1,0 +1,35 @@
+PDFina - Herramienta de escritorio para trabajar con PDFs sin conexión
+
+Copyright (c) 2025 Matias Lawwliet
+
+Este programa es software libre: puedes redistribuirlo y/o modificarlo
+bajo los términos de la Licencia Pública General de GNU publicada por la
+Free Software Foundation, ya sea la versión 3 de la Licencia, o (a tu
+elección) cualquier versión posterior.
+
+Este programa se distribuye con la esperanza de que sea útil, pero SIN
+NINGUNA GARANTÍA; ni siquiera la garantía implícita de COMERCIALIZACIÓN
+o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Consulta la Licencia Pública
+General de GNU para más detalles.
+
+Deberías haber recibido una copia de la Licencia Pública General de GNU
+junto con este programa. Si no, consulta <https://www.gnu.org/licenses/>.
+
+---
+
+## Cláusula adicional de restricción de uso comercial (según la Sección 7 de la GPL v3):
+
+1. El uso de este software está **estrictamente limitado a fines personales, educativos o de investigación**.
+2. **Está prohibido todo uso comercial**, incluyendo pero no limitado a:
+   - Venta directa o indirecta del software;
+   - Uso como parte de servicios pagos;
+   - Integración en productos o soluciones comerciales;
+   - Distribución por parte de entidades comerciales, salvo permiso explícito del autor.
+3. El incumplimiento de esta cláusula constituirá una violación de la licencia y se considerará uso no autorizado del software.
+
+---
+
+## Protección de nombre y marca
+
+“PDFina” es un nombre reservado por el autor y se encuentra protegido como **marca no autorizada para forks o derivados**.
+Los proyectos que modifiquen o redistribuyan este software deberán **usar un nombre claramente diferente** para evitar confusión con el original.
