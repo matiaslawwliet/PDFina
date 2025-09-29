@@ -33,7 +33,6 @@ auth.json
 /microservicios/**/__pycache__/
 /microservicios/**/*.spec
 /microservicios/**/*.spec/
-/microservicios/**/*.exe
 /microservicios/**/warn-*.txt
 /microservicios/**/localpycs/
 /microservicios/**/base_library.zip
