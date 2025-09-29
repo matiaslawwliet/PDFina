@@ -21,7 +21,6 @@ Homestead.json
 .env.production
 .phpactor.json
 auth.json
-/dist
 *.pdf
 *.doc
 *.docx
