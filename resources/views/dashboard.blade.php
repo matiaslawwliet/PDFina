@@ -24,6 +24,8 @@
                 <livewire:eliminar-paginas-pdf />
             @elseif($modulo === 'eliminarpassword')
                 <livewire:eliminar-password-pdf />
+            @elseif($modulo === 'dni')
+                <livewire:dni-a-pdf />
             @else
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-neutral-400 text-xl animate-fade-in">
                     <img src="{{ asset('images/png/pdfina.png') }}" alt="PDFina Logo" class="w-16 h-24 mb-4 aspect-[468/391] dark:drop-shadow-[0_0_2px_white]" />

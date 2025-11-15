@@ -26,6 +26,10 @@ auth.json
 *.docx
 *.ps1
 
+#
+boost.json
+.vscode/
+
 # Ignorar artefactos de microservicios y empaquetados Python
 /microservicios/**/build/
 /microservicios/**/dist/

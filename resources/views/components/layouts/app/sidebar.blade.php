@@ -21,6 +21,7 @@
                 <flux:navlist.group :heading="__('Herramientas')" class="grid">
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'imagen'])" :current="request()->get('modulo') === 'imagen'" wire:navigate>{{ __('Imagen a PDF') }}</flux:navlist.item>
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'word'])" :current="request()->get('modulo') === 'word'" wire:navigate>{{ __('Docx a PDF') }}</flux:navlist.item>
+                    <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'dni'])" :current="request()->get('modulo') === 'dni'" wire:navigate>{{ __('DNI a PDF') }}</flux:navlist.item>
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'pdfaword'])" :current="request()->get('modulo') === 'pdfaword'" wire:navigate>{{ __('PDF a Docx') }}</flux:navlist.item>
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'unir'])" :current="request()->get('modulo') === 'unir'" wire:navigate>{{ __('Unir PDF') }}</flux:navlist.item>
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'dividir'])" :current="request()->get('modulo') === 'dividir'" wire:navigate>{{ __('Dividir PDF') }}</flux:navlist.item>
