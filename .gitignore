@@ -3,6 +3,7 @@ NOTES.md
 
 /vendor/
 node_modules/
+nativephp/
 npm-debug.log
 yarn-error.log
 

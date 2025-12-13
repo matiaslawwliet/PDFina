@@ -4,8 +4,8 @@ namespace App\Listeners;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
-use Native\Laravel\Events\AutoUpdater\UpdateNotAvailable;
-use Native\Laravel\Facades\Alert;
+use Native\Desktop\Events\AutoUpdater\UpdateNotAvailable;
+use Native\Desktop\Facades\Alert;
 
 class NotifyNoUpdate
 {

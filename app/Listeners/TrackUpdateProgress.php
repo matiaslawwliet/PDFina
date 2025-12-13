@@ -3,7 +3,7 @@
 namespace App\Listeners;
 
 use Illuminate\Support\Facades\Log;
-use Native\Laravel\Events\AutoUpdater\DownloadProgress;
+use Native\Desktop\Events\AutoUpdater\DownloadProgress;
 
 class TrackUpdateProgress
 {

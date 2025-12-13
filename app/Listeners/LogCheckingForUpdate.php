@@ -3,7 +3,7 @@
 namespace App\Listeners;
 
 use Illuminate\Support\Facades\Log;
-use Native\Laravel\Events\AutoUpdater\CheckingForUpdate;
+use Native\Desktop\Events\AutoUpdater\CheckingForUpdate;
 
 class LogCheckingForUpdate
 {

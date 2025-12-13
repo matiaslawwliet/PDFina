@@ -3,8 +3,8 @@
 namespace App\Listeners;
 
 use Illuminate\Support\Facades\Log;
-use Native\Laravel\Events\AutoUpdater\Error;
-use Native\Laravel\Facades\Alert;
+use Native\Desktop\Events\AutoUpdater\Error;
+use Native\Desktop\Facades\Alert;
 
 class HandleUpdateError
 {

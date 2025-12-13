@@ -4,10 +4,10 @@ namespace App\Listeners;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
-use Native\Laravel\Events\AutoUpdater\UpdateDownloaded;
-use Native\Laravel\Facades\Alert;
-use Native\Laravel\Facades\App as NativeApp;
-use Native\Laravel\Facades\Shell;
+use Native\Desktop\Events\AutoUpdater\UpdateDownloaded;
+use Native\Desktop\Facades\Alert;
+use Native\Desktop\Facades\App as NativeApp;
+use Native\Desktop\Facades\Shell;
 
 class NotifyUpdateDownloaded
 {

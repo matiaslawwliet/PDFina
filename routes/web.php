@@ -4,7 +4,7 @@ use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
-use Native\Laravel\Facades\Shell;
+use Native\Desktop\Facades\Shell;
 
 Route::get('/', function () {
     return view('welcome');

@@ -4,8 +4,8 @@ namespace App\Listeners;
 
 use App\Events\Menu\CheckUpdateClicked;
 use Illuminate\Support\Facades\Log;
-use Native\Laravel\Facades\Alert;
-use Native\Laravel\Facades\AutoUpdater;
+use Native\Desktop\Facades\Alert;
+use Native\Desktop\Facades\AutoUpdater;
 
 class RunSearchUpdates
 {
