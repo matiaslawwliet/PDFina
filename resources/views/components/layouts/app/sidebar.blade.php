@@ -27,6 +27,7 @@
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'dividir'])" :current="request()->get('modulo') === 'dividir'" wire:navigate>{{ __('Dividir PDF') }}</flux:navlist.item>
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'comprimir'])" :current="request()->get('modulo') === 'comprimir'" wire:navigate>{{ __('Comprimir PDF') }}</flux:navlist.item>
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'firmar'])" :current="request()->get('modulo') === 'firmar'" wire:navigate>{{ __('Firmar PDF') }}</flux:navlist.item>
+                    <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'sellar'])" :current="request()->get('modulo') === 'sellar'" wire:navigate>{{ __('Sellar PDF') }}</flux:navlist.item>
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'eliminarpaginas'])" :current="request()->get('modulo') === 'eliminarpaginas'" wire:navigate>{{ __('Eliminar páginas PDF') }}</flux:navlist.item>
                     <flux:navlist.item icon="arrow-right" :href="route('dashboard', ['modulo' => 'eliminarpassword'])" :current="request()->get('modulo') === 'eliminarpassword'" wire:navigate>{{ __('Eliminar contraseña PDF') }}</flux:navlist.item>
                 </flux:navlist.group>
