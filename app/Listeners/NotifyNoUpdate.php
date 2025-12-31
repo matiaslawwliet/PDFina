@@ -2,6 +2,7 @@
 
 namespace App\Listeners;
 
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Native\Desktop\Events\AutoUpdater\UpdateNotAvailable;
@@ -13,12 +14,15 @@ class NotifyNoUpdate
     {
         Log::info('[Updater] No hay actualizaciones disponibles.');
 
-        Alert::new()
-            ->type('info')
-            ->title('Sin actualizaciones')
-            ->show('Tu aplicación ya está actualizada a la última versión.');
+        // Solo mostrar alerta si la búsqueda fue iniciada manualmente por el usuario
+        if (Cache::pull('updater_manual_check')) {
+            Alert::new()
+                ->type('info')
+                ->title('Sin actualizaciones')
+                ->show('Tu aplicación ya está actualizada a la última versión.');
+        }
 
-        $updaterPath = rtrim(getenv('LOCALAPPDATA') ?: '', '\\/') . DIRECTORY_SEPARATOR . 'pdfina-updater';
+        $updaterPath = rtrim(getenv('LOCALAPPDATA') ?: '', '\\/').DIRECTORY_SEPARATOR.'pdfina-updater';
 
         if ($updaterPath && File::exists($updaterPath)) {
             if (File::deleteDirectory($updaterPath, true)) {

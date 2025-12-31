@@ -9,6 +9,6 @@ class LogCheckingForUpdate
 {
     public function handle(CheckingForUpdate $event): void
     {
-        Log::info('[Updater] Checking for update triggered.');
+        Log::info('[Updater] Se activó la búsqueda de actualización.');
     }
 }
