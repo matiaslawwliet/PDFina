@@ -11,27 +11,27 @@ class EventServiceProvider extends ServiceProvider
             \App\Listeners\RunSearchUpdates::class,
         ],
 
-        \Native\Laravel\Events\AutoUpdater\CheckingForUpdate::class => [
+        \Native\Desktop\Events\AutoUpdater\CheckingForUpdate::class => [
             \App\Listeners\LogCheckingForUpdate::class,
         ],
 
-        \Native\Laravel\Events\AutoUpdater\UpdateAvailable::class => [
+        \Native\Desktop\Events\AutoUpdater\UpdateAvailable::class => [
             \App\Listeners\NotifyUpdateAvailable::class,
         ],
 
-        \Native\Laravel\Events\AutoUpdater\UpdateNotAvailable::class => [
+        \Native\Desktop\Events\AutoUpdater\UpdateNotAvailable::class => [
             \App\Listeners\NotifyNoUpdate::class,
         ],
 
-        \Native\Laravel\Events\AutoUpdater\DownloadProgress::class => [
+        \Native\Desktop\Events\AutoUpdater\DownloadProgress::class => [
             \App\Listeners\TrackUpdateProgress::class,
         ],
 
-        \Native\Laravel\Events\AutoUpdater\UpdateDownloaded::class => [
+        \Native\Desktop\Events\AutoUpdater\UpdateDownloaded::class => [
             \App\Listeners\NotifyUpdateDownloaded::class,
         ],
 
-        \Native\Laravel\Events\AutoUpdater\Error::class => [
+        \Native\Desktop\Events\AutoUpdater\Error::class => [
             \App\Listeners\HandleUpdateError::class,
         ],
     ];

@@ -64,7 +64,7 @@ return [
         'GITHUB_*',
         'DO_SPACES_*',
         '*_SECRET',
-        'ZEPHPYR_*',
+        'BIFROST_*',
         'NATIVEPHP_UPDATER_PATH',
         'NATIVEPHP_APPLE_ID',
         'NATIVEPHP_APPLE_ID_PASS',
@@ -86,6 +86,7 @@ return [
         'content',
         'node_modules',
         '*/tests',
+        'bootstrap/cache/config.php',
     ],
 
     /**
@@ -155,7 +156,6 @@ return [
      */
     'prebuild' => [
         'npm run build',
-        'php artisan optimize',
     ],
 
     'postbuild' => [
