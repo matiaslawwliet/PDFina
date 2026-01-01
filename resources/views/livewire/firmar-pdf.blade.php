@@ -3,6 +3,10 @@
         <img src="{{ asset('images/png/nina.png') }}" alt="PDFina Logo" class="w-10 h-8 aspect-[468/391] dark:drop-shadow-[0_0_2px_white]" />
         Firmar tu PDF
     </h2>
+    <div class="mb-4 p-3 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-800 dark:text-yellow-200 rounded shadow text-sm">
+        <b>Requisito:</b> Debes tener instalado <b>Ghostscript</b> en tu equipo para poder previsualizar los archivos PDF.<br>
+        Descárgalo desde <a href="https://ghostscript.com/releases/gsdnld.html" class="underline text-blue-700 dark:text-blue-300" target="_blank">ghostscript.com/releases/gsdnld.html</a>
+    </div>
     <form wire:submit.prevent="firmar" class="space-y-6">
         <div>
             <label class="block text-sm font-medium mb-1">Archivo PDF</label>

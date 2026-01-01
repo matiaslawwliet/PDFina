@@ -1,21 +1,24 @@
 <div class="max-w-xl mx-auto p-6 bg-white/80 dark:bg-zinc-900/80 rounded-2xl shadow-2xl border border-zinc-200 dark:border-zinc-800 backdrop-blur-xl animate-fade-in">
     <h2 class="text-3xl font-extrabold mb-6 text-blue-700 dark:text-blue-300 tracking-tight flex items-center gap-2">
         <img src="{{ asset('images/png/nina.png') }}" alt="PDFina Logo" class="w-10 h-8 aspect-[468/391] dark:drop-shadow-[0_0_2px_white]" />
-        Eliminar restricciones de PDF
+        Eliminar contraseña de PDF
     </h2>
     <div class="mb-4 p-3 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-800 dark:text-yellow-200 rounded shadow text-sm">
-        Esta función elimina restricciones de impresión, edición y copiado de archivos PDF que <b>pueden abrirse sin contraseña</b>.<br>
-        <b>No elimina contraseñas de apertura</b> (no puede abrir PDFs bloqueados).
+        <b>Requisito:</b> Debes tener instalado <b>Ghostscript</b> en tu equipo para poder eliminar la contraseña de los archivos PDF.<br>
+        Descárgalo desde <a href="https://ghostscript.com/releases/gsdnld.html" class="underline text-blue-700 dark:text-blue-300" target="_blank">ghostscript.com/releases/gsdnld.html</a>
     </div>
     <form wire:submit.prevent="eliminarPassword" class="space-y-6">
         <div>
-            <label class="block text-sm font-medium mb-1">Archivo PDF con restricciones</label>
+            <label class="block text-sm font-medium mb-1">Archivo PDF con contraseña</label>
+            <p class="mt-2 mb-2 text-xs text-gray-500 dark:text-gray-400">
+                Esta función elimina restricciones de impresión, edición y copiado de archivos PDF que pueden abrirse sin contraseña.
+            </p>
             <input type="file" wire:model="pdf" accept=".pdf" class="block w-full text-sm text-gray-700 dark:text-gray-200 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-100 file:text-blue-700 dark:file:bg-blue-900 dark:file:text-blue-200 hover:file:bg-blue-200 dark:hover:file:bg-blue-800 transition" />
             @error('pdf')
                 <div class="text-red-500 text-sm animate-shake">{{ $message }}</div>
             @enderror
         </div>
-        <button type="submit" class="w-full py-3 bg-gradient-to-r from-blue-500 to-blue-700 dark:from-blue-800 dark:to-blue-600 text-white font-bold rounded-xl shadow-lg hover:scale-105 hover:from-blue-600 hover:to-blue-800 transition-all duration-300">Eliminar restricciones</button>
+        <button type="submit" class="w-full py-3 bg-gradient-to-r from-blue-500 to-blue-700 dark:from-blue-800 dark:to-blue-600 text-white font-bold rounded-xl shadow-lg hover:scale-105 hover:from-blue-600 hover:to-blue-800 transition-all duration-300">Eliminar contraseña</button>
     </form>
     @php if(!isset($error)) { $error = null; } @endphp
     @if($nuevoPdfGenerado && !$error)
