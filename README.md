@@ -8,11 +8,13 @@
 ## Características principales
 - Convertir imágenes a PDF
 - Convertir Docx a PDF
+- DNI a PDF
 - Convertir PDF a Docx
 - Unir archivos PDF
 - Dividir archivo PDF
 - Comprimir PDF
 - Firmar PDF
+- Sellar PDF
 - Eliminar páginas de PDF
 - Eliminar contraseña de PDF
 - 100% offline, sin límites de tamaño
@@ -23,7 +25,7 @@ Brindar una herramienta gratuita, local y confiable para manipular PDFs sin comp
 ## Tecnologías utilizadas
 - Laravel 12
 - SQLite
-- NativePHP 1.3
+- NativePHP 2.0
 - PHP 8.3
 - Tailwind CSS 4
 - Livewire 3
