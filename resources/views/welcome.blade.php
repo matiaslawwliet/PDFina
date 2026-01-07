@@ -104,7 +104,7 @@
                         <div class="absolute inset-0 bg-gray-900/30 rounded-2xl"></div>
                     </div>
                     <div class="absolute -top-4 -right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse">
-                        Versión 0.7
+                        Versión 0.8
                     </div>
                 </div>
             </div>
