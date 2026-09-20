@@ -1,0 +1,19 @@
+# socket.yml
+version: 2
+
+# Configuración de políticas de paquetes
+project:
+  # Aquí adaptamos tus reglas originales
+  policy:
+    # minimun-release-age=10080 (7 días en minutos)
+    minPackageAge: 7d
+
+    # block-exotic-subdeps=true
+    blockExoticDependencies: true
+
+    # trust-policy=no-downgrade
+    # Socket maneja esto mediante alertas de seguridad automáticas
+    issueRules:
+      evasiveCode: error
+      unresolvedEverywhere: warn
+      telemetry: error

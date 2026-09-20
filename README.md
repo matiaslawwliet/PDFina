@@ -1,0 +1,72 @@
+![Logo PDFina](https://raw.githubusercontent.com/matiaslawwliet/PDFina/refs/heads/main/public/icon.png)
+
+# PDFina
+**PDFina** es una herramienta de escritorio gratuita, desarrollada con [Laravel 12](https://laravel.com/) y [NativePHP](https://nativephp.com/), que permite trabajar con archivos PDF de forma local, sin depender de servicios en la nube ni exponer tus archivos a terceros.
+
+---
+
+## Características principales
+- Comprimir PDF
+- Dividir PDF
+- DNI a PDF
+- Editar PDF
+- Eliminar páginas de PDF
+- Eliminar contraseña de PDF
+- Firmar PDF
+- Convertir imágenes a PDF
+- PDF a Word (PDF a Docx)
+- PDF escaneado a PDF seleccionable (OCR)
+- Sellar PDF
+- Unir PDF
+- Word a PDF (PDF a Docx)
+- 100% offline, sin límites de tamaño
+
+## Objetivo del proyecto
+Brindar una herramienta gratuita, local y confiable para manipular PDFs sin comprometer la privacidad del usuario ni depender de servicios comerciales o en línea.
+
+## Tecnologías utilizadas
+- Laravel 12
+- SQLite
+- NativePHP 2.0
+- PHP 8.3
+- Tailwind CSS 4
+- Livewire 3
+- [Ghostscript](https://ghostscript.com/releases/gsdnld.html): unir, dividir y comprimir PDFs
+- Dompdf: convertir imágenes a PDF
+- [pdf2docx](https://github.com/dothinking/pdf2docx): PDF a Word
+- [docx2pdf](https://github.com/AlJohri/docx2pdf): Word a PDF
+- [PyMuPDF](https://pymupdf.readthedocs.io/): editar PDF y OCR
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract): PDF escaneado a PDF seleccionable
+
+##  Licencia
+PDFina está licenciado bajo **GNU GPLv3 con una cláusula adicional** que restringe su uso **únicamente a fines personales y no comerciales**.
+
+> Cualquier uso comercial está prohibido sin autorización expresa.
+> El nombre **“PDFina”** está protegido y **no puede ser reutilizado en forks o derivados**.
+
+Consulta el archivo [`LICENSE`](LICENSE) para más información.
+
+---
+
+## Capturas de pantalla
+Una vista rápida de la interfaz y los flujos principales de PDFina.
+
+![Vista inicio](https://raw.githubusercontent.com/matiaslawwliet/PDFina/refs/heads/main/public/images/demo/demo1.png)
+*Vista Inicio*
+
+![Interfaz principal](https://raw.githubusercontent.com/matiaslawwliet/PDFina/refs/heads/main/public/images/demo/demo2.png)
+*Interfaz principal*
+
+![Firmar PDF](https://raw.githubusercontent.com/matiaslawwliet/PDFina/refs/heads/main/public/images/demo/demo3.png)
+*Proceso para firmar PDF*
+
+![Resultado firma](https://raw.githubusercontent.com/matiaslawwliet/PDFina/refs/heads/main/public/images/demo/demo4.png)
+*Resultado firma PDF*
+
+![Unir PDF](https://raw.githubusercontent.com/matiaslawwliet/PDFina/refs/heads/main/public/images/demo/demo5.png)
+*Unir varios archivos PDF*
+
+---
+
+## Repositorio de releases
+Para mantener el repositorio principal limpio y centrado en el código fuente, los artefactos de distribución (binarios, instaladores y assets de las versiones) se publican en un repositorio separado de releases. Puedes acceder al repositorio de releases aquí: [PDFina releases](https://github.com/matiaslawwliet/PDFina-releases)
